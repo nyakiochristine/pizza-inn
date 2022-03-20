@@ -73,9 +73,17 @@ function calcToppingsPrice(toppings){
         if (toppings[i]=="extracheese"){
             toppingsNo +=50;
         }
+        if (toppings[i]=="sausages"){
+            toppingsNo +=30;
+        }
+        if(toppings[i]=="pepperoni"){
+            toppingsNo +=100;
+        }
     }
+    return toppingsNo *1;
 
 }
+
 
 
 
