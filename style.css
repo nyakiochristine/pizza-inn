@@ -48,3 +48,12 @@
     height: 15vw;
     object-fit: cover;
 }
+.card{
+    background: rgb(223, 151, 125);
+    border-radius: 20px;
+    border-style: none;
+}
+#services{
+    background:#b61500;
+    background-size: cover;
+}
