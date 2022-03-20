@@ -33,6 +33,15 @@ var toppingsPrice =[{
         large: 150
     }
 }]
+//location//
+function Residence(name,location){
+    this.name = name;
+    this.location = location;
+    
+}
+
+
+///CALCULATE PRICES//
 
 
     
