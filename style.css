@@ -69,6 +69,9 @@
 #fm2{
     border: 1px solid black;
     background: #6e2016;
+    color: white;
+    font-size: 30px;
+    width: 500px;
    
 }
 #cart{
@@ -77,10 +80,16 @@
    align-self: center;
 }
 .form-group{
-    padding: 50px;
+    padding: 20px;
 }
 .order{
     background: #6e2016;
+}
+.btn{
+    background: brown;
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 
