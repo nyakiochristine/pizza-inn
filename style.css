@@ -31,3 +31,11 @@
 .nav-item{
     font-size: 30px;
 }
+
+#landing-page{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+}
