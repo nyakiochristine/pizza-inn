@@ -6,6 +6,11 @@ function Pizza(size,crust){
 var sizePrice={
     small: 650,
     medium: 800,
-    large: 1250
+    large: 1250,
 
-}
+};
+var crustPrice = {
+    stuffed:250,
+    cracker: 200,
+    flatbread: 150,
+};
