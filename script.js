@@ -16,7 +16,7 @@ var crustPrice = {
 };
 
 var toppingsPrice =[{
-    extracheeseonion:{
+    extracheese:{
         small:50,
         medium: 70,
         large: 100 
@@ -63,6 +63,16 @@ function calcCrustPrice(crust){
         return crustPrice.cracker *1;
     }else{
         return crustPrice.flatbread *1;
+    }
+
+}
+
+function calcToppingsPrice(toppings){
+    var toppingsNo = 0;
+    for(i=0; 1<toppings.length; i++){
+        if (toppings[i]=="extracheese"){
+            toppingsNo +=50;
+        }
     }
 
 }
