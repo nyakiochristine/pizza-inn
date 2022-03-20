@@ -14,3 +14,27 @@ var crustPrice = {
     cracker: 200,
     flatbread: 150,
 };
+
+var toppingsPrice =[{
+    extracheeseonion:{
+        small:50,
+        medium: 70,
+        large: 100 
+
+    },
+    sausages:{
+        small: 30,
+        medium: 50,
+        large: 70
+    },
+    pepperoni:{
+        small: 100,
+        medium: 120,
+        large: 150
+    }
+}]
+
+
+    
+
+
