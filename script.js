@@ -41,7 +41,33 @@ function Residence(name,location){
 }
 
 
-///CALCULATE PRICES//
+///calculate size according to price//
+function calcSizePrice(size){
+    if (size==="small")  {
+        return sizePrice.small *1;
+    } else if(size==="medium") {
+        return sizePrice.medium *1;
+    } else {
+        return sizePrice.large *1;
+    }
+
+
+};
+
+//calculate crust price//
+function calcCrustPrice(crust){
+    if(crust==="stuffed") {
+        return crustPrice.stuffed *1;
+
+    }else if(size==="cracker"){
+        return crustPrice.cracker *1;
+    }else{
+        return crustPrice.flatbread *1;
+    }
+
+}
+
+
 
 
     
