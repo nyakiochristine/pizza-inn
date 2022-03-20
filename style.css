@@ -68,4 +68,20 @@
 }
 #fm2{
     border: 1px solid black;
+    background: #6e2016;
+   
 }
+#cart{
+    height: 200px;
+    width: 220px;
+   align-self: center;
+}
+.form-group{
+    padding: 50px;
+}
+.order{
+    background: #6e2016;
+}
+
+
+  
