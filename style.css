@@ -95,6 +95,7 @@ footer{
     color: white;
     font-size: 30px;
     width: 500px;
+    margin-top: 20px;
    
 }
 #cart{
@@ -116,7 +117,7 @@ footer{
 }
 .refresh img{
     height: 300px;
-    width: 480px;
+    width: 500px;
     justify-items: center;
    
 }
@@ -153,6 +154,10 @@ footer{
     border-radius: 20px;
     padding: 20px;
     color: black;
+}
+#jumbo{
+    background-position: 50ex;
+    background: whitesmoke;
 }
 
   
