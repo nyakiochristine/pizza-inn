@@ -53,6 +53,11 @@
     border-radius: 20px;
     border-style: none;
 }
+.mb-6{
+    font-size: 30px;
+}
+
+
 #services{
     background:#b61500;
     background-size: cover;
@@ -111,6 +116,20 @@
 }
 .header{
     background: #d1c6c5;
+}
+#landing-page{
+    background-image: url(assets/pexels-cottonbro-3944308.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.introp{
+    color: white;
+    margin-top: 100px;
+    text-decoration: wavy;
+}
+.intro-text{
+    justify-content: flex-end;
 }
 
 
