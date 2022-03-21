@@ -117,6 +117,7 @@
 .header{
     background: #d1c6c5;
 }
+
 #landing-page{
     background-image: url(assets/pexels-cottonbro-3944308.jpg);
     height: 100vh;
@@ -131,6 +132,5 @@
 .intro-text{
     justify-content: flex-end;
 }
-
 
   
