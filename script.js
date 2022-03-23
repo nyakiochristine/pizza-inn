@@ -105,10 +105,26 @@ function getCrust(){
 function getToppings(){
     var listToppings = [] ;
     $(".toppings:checked").each (function(){
+        listToppings.push($(this).val)
 
     })
     return listToppings;
 }
+
+
+//form validation//
+$("form#fm2").submit(function(event){
+    event.preventDefault();
+    var pizzaSize = getPizza();
+    var crust = getCrust();
+    var listToppings = getToppings ()
+    var newPizza = new Pizza(pizzaSize,crust)
+    newPizza.toppings.push($(this).val());
+});
+
+
+
+
 
 
 
