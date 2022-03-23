@@ -41,7 +41,7 @@
 
 ## Live Link
 
-< https://nyakiochristine.github.io/pizza-inn/>
+<https://nyakiochristine.github.io/pizza-inn/>
 
 ## License
 
