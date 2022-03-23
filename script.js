@@ -83,6 +83,32 @@ function calcToppingsPrice(toppings){
     return toppingsNo *1;
 
 }
+console.log(function checkExtraCheese(toppings){
+    return toppings === "extracheese";
+})
+
+
+$("document").ready (function(){
+    function getPizza(){
+        return $("#pizzasize")
+        .find(":selected")
+        .val()
+    }
+})
+
+function getCrust(){
+    return $ ("#crusttype")
+    .find(":selected")
+    .val()
+}
+
+function getToppings(){
+    var listToppings = [] ;
+    $(".toppings:checked").each (function(){
+
+    })
+    return listToppings;
+}
 
 
 
