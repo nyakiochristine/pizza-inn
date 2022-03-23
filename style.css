@@ -7,8 +7,20 @@
     box-sizing: 0;
     font-family: 'Inspiration', cursive;
     font-family: 'Roboto', sans-serif;
+    
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 8 rem;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--clr4);
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -17,6 +29,20 @@
     overflow: hidden;
    
     
+}
+.home{
+    padding-top: 4rem 1%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.navbar a:hover{
+    transform: translate(2rem) ;
+    transition: 2s ease;
+}
+
+#gallery{
+    align-self: center;
 }
 .navbar-nav ul li {
     list-style-type: none;
@@ -79,6 +105,7 @@ footer{
 #services{
     background:#b61500;
     background-size: cover;
+    text-align: justify;
 }
 #contact{
     background:	#b61500;
@@ -89,13 +116,16 @@ footer{
 #menu{
     background-color: #6e2016;
 }
-#fm2{
+form{
     border: 1px solid black;
     background: #6e2016;
     color: white;
     font-size: 30px;
     width: 500px;
-    margin-top: 20px;
+    height: fit-content;
+    margin-top: 10px;
+    display: inline block;
+    border-style: none;
    
 }
 #cart{
@@ -103,14 +133,14 @@ footer{
     width: 220px;
    align-self: center;
 }
-.form-group{
-    padding: 20px;
-}
+
+
+
 .order{
     background: #6e2016;
 }
 .btn{
-    background: brown;
+   background: brown;
     border-style: none;
     border-radius: 20px;
     padding: 10px;
@@ -122,7 +152,7 @@ footer{
    
 }
 .refresh{
-    background-color: whitesmoke;
+    background-color: #6e2016;
 }
 .small img{
     width: 500px;
@@ -142,6 +172,7 @@ footer{
     background-image: url(assets/pexels-cottonbro-3944308.jpg);
     height: 100vh;
     background-repeat: no-repeat;
+    opacity: 0.9;
     background-size:cover;
 }
 .introp{
@@ -151,16 +182,41 @@ footer{
 }
 .intro-text{
     justify-content: flex-end;
+
+}
+address{
+    font-size: 35px;
+    margin-top:100px ;
 }
 .btn1{
-    background-color: #b61500;
+    background-color:#b61500;
     border-radius: 20px;
     padding: 20px;
     color: black;
+    text-align: center;
 }
 #jumbo{
     background-position: 50ex;
-    background: whitesmoke;
+    background:#b61500;
+}
+#total{
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+}
+.about{
+    font-size: 30px;
+}
+.form-control{
+    font-size: 25px;
+}
+label{
+    font-size: 25px;
 }
 
-  
+#fm2{
+    padding: 50px;
+}
+.lead{
+    color: white;
+}
