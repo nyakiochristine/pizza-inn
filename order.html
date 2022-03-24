@@ -13,9 +13,10 @@
 <body>
    
 <section class="order">
-  <h1>ORDER TODAY AT THE COMFORT OF YOUR HOME</h1>
-  <h2>OUR GALLERY</h2>
+  
     <div class="container-fluid" id="sizes">
+      <h1>ORDER TODAY AT THE COMFORT OF YOUR HOME</h1>
+  <h2>OUR GALLERY</h2>
         <div class="row ">
             <div class="col">
                <div class="small text-center">
@@ -67,6 +68,7 @@
 
 <!--order form-->
 <div class="container-fluid" id="jumbo" >
+  <div class="row">
         <div class="col-md-6 col-sm-12">
             <form id="fm2">
               <h3>ORDER TODAY</h3>
@@ -75,29 +77,29 @@
                   <input type="email" class="form-control" id="emailad" placeholder="name@example.com">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Select Size</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
+                  <label for="pizzasize">Select Size</label>
+                  <select class="form-control" id="pizzasize">
+                    <option>Small--Ksh.650</option>
+                    <option>Medium--Ksh.800</option>
+                    <option>Large--Ksh.1250</option>
                    
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">Select Crust</label>
-                  <select  class="form-control" id="exampleFormControlSelect2">
-                    <option>Stuffed</option>
-                    <option>Cracker</option>
-                    <option>Flat Bread</option>
+                  <label for="crusttype">Select Crust</label>
+                  <select  class="form-control" id="crusttype">
+                    <option>Stuffed--250</option>
+                    <option>Cracker--200</option>
+                    <option>Flat Bread--150</option>
                     
                   </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect3">Select Toppings</label>
-                    <select  class="form-control" id="exampleFormControlSelect3">
-                      <option>CheeseOnion</option>
-                      <option>Green-pepper and sausage</option>
-                      <option>Pepperoni</option>
+                    <label for="toppingstype">Select Toppings</label>
+                    <select  class="form-control" id="toppingstype">
+                      <option>extracheese--Ksh.50</option>
+                      <option>sausage--Ksh.30</option>
+                      <option>Pepperoni--Ksh.100</option>
                       
                     </select>
                   </div>
@@ -105,34 +107,72 @@
                   
 
                   <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     <label class="form-check-label" for="exampleRadios1">
-                      Soda
+                      Soda--Ksh.100
                     </label>
                    </div>
                   
                   
                   <div class="form-check -inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                     <label class="form-check-label" for="exampleRadios2">
-                      Juice
+                      Juice--100
                     </label>
                   </div>
                   
 
                   <div class="form-check -inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3" >
                     <label class="form-check-label" for="exampleRadios3">
-                      Vegetable Salad
+                      Vegetable Salad--Ksh.100
                     </label>
                   </div>
+                  <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+                    Order now
+                </button>
                 
             </form>
         </div>
+  
+         <div class="col-md-6">
          
                <button class=" btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="total">
                 CHECK-OUT
               </button>
+
+
+
+
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLongTitle">
+                                Confirm the price
+                            </h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Amount you are to pay for your order is ksh
+                                <span id="money" style="color: rgb(241, 236, 236)"></span>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="myModel" data-dismiss="modal">
+                                Confirm checkout
+                            </button>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+  </div>
+        
 
  <footer class="footer text-faded text-center py-5">
      <p class="m-0 small">Copyright &copy; PIZZA INN 2022</p>
