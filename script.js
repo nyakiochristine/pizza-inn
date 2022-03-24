@@ -119,9 +119,88 @@ $("form#fm2").submit(function(event){
     var crust = getCrust();
     var listToppings = getToppings ()
     var newPizza = new Pizza(pizzaSize,crust)
-    newPizza.toppings.push($(this).val());
+     newPizza.toppings.push($(this).val());
 });
+ $("#cart").hide();
+ $("#table").show()
+ $(".checkout").show();
 
+ $(".checkout").show();
+ var oneOrder =
+     calcSizePrice(pizzaSize) +
+     calcCrustPrice(crust) +
+     calcToppingsPrice(toppingList);
+
+
+ $("#items").append(
+     "<tr>" +
+     "<td>" +
+     newPizza.size +
+     "</td>" +
+     "<td>" +
+     "<p>" +
+     newPizza.crust +
+     "</p>" +
+     "</td>" +
+     "<td>" +
+     newPizza.toppings +
+     "</td>" +
+     "<td>" +
+     oneOrder +
+     "</td>" +
+     "</tr>"
+ );
+
+ var totalQuantity = parseInt($("#quantity").val());
+
+ function calcTotal() {
+     var pizzaPriceOne = calcSizePrice(getPizza()) + calcCrustPrice(getCrust) + calcToppingsPrice(getToppings());
+     return pizzaPriceOne
+
+ }
+
+ var pizzaList = [];
+
+ $("#orderbtn").on("click",function(){
+     totalQuantity +=1;
+     $("#quantity").text(totalQuantity);
+     pizzaList.push(calcTotal());
+ });
+
+ $("#total").click(function(){
+     var totalCost = 0;
+     pizzaList.forEach(function(pizza){
+         totalCost +=pizza;
+     });
+     $("#money").text(totalCost);
+ });
+
+ $("#money").text(totalCost);
+ 
+
+ $("#myModel").click(function(){
+     var deliver = confirm(
+         "Would you like us to deliver your Pizza to your doorstep for Ksh.200?"
+     );
+     if ( deliver) {
+         var place = prompt ("Key in your location");
+         $("#place").text(place);
+         $("#success").show();
+        
+     } else{
+         $("#no-delivery").show();
+     }
+
+     $("pizzaSize").val("");
+     $("crust").val("");
+     $("items").remove();
+     $("#quantity").text(0);
+
+
+
+ });
+
+ 
 
 
 
